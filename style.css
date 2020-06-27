@@ -1,0 +1,17 @@
+
+
+.jumbotron {
+  background-color:blanchedalmond;
+  color:black #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.panel {
+  text-align: center;
+  border-style: none;
+}
+
+.footer {
+  background-color:blanchedalmond;
+}

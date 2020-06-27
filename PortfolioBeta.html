@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">   
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+    <title>CodePen - Flickity</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
+    <style>
+    /* external css: flickity.css */
+    
+    * { box-sizing: border-box; }
+    
+    body { font-family: sans-serif; }
+    
+    .carousel {
+      background: #FAFAFA;
+    }
+    
+    .carousel-cell {
+      width: 66%;
+      height: 200px;
+      margin-right: 10px;
+      background: #8C8;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
+    }
+    
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(carousel-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+    </style>
+    <script>
+      window.console = window.console || function(t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+    <style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
 
-  
-<nav class="navbar-fixed-top">
+
+<nav class="navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,6 +79,7 @@
 </nav>
 
 
+
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Brian White</h1>      
@@ -47,10 +87,20 @@
   </div>
 </div>
 
+<div class="panel panel-default">
+  <div class="panel-body"><h1>Let's Schedule an Interview</h1>
+    <p>I can help you with your communications needs. I've worked on websites and broadcasts in newsrooms coding scripts, pages and sound to deliver compelling narratives for nearly 10 years.</p> </div>
+</div>
 
+<div class="carousel" data-flickity>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>  
 
-
-<footer class="container-fluid text-center">
+<footer class="footer container-fluid text-center">
   <ul>
     <li>github</li>
     <li>linkedin</li>
@@ -58,6 +108,8 @@
     <li>flickr</li>
   </ul>
 </footer>
+
+  
 </div>
 
 </html>
