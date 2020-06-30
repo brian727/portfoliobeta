@@ -66,30 +66,28 @@ img {
 .top-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: 
-      'showcase showcase top-box-a'
-      'showcase showcase top-box-b';
+  
 }
 
 /* Showcase */
 
 .showcase {
-  grid-area: showcase;
-  min-height: 400px;
-  background: url(img/dryhot.jpg);
+
+  background: url(img/saguaronight.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   box-shadow: var(--shadow);
+  
 }
 
 .showcase h1 {
   font-size: 4rem;
-  margin-bottom: 0e;
+  margin-bottom: 0;
   color: var(--light);
 }
 
@@ -97,6 +95,15 @@ img {
   font-size: 1.3rem;
   margin-top: 0;
   color: var(--light);
+  
+}
+
+.about{
+  background-color: var(--shadow);
+  box-shadow: var(--shadow);
+  justify-content: center;
+  display: flex;
+
 }
 
 /* Top Box */
@@ -109,13 +116,7 @@ img {
   padding: 1.5rem;
 }
 
-.top-box-a {
-  grid-area: top-box-a;
-}
 
-.top-box-b {
-  grid-area: top-box-b;
-}
 
 /* Boxes */
 
