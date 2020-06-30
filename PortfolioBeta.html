@@ -1,115 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">   
+<html lang="en">
 <head>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-    <meta name="apple-mobile-web-app-title" content="CodePen">
-    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-    <title>CodePen - Flickity</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
-    <style>
-    /* external css: flickity.css */
-    
-    * { box-sizing: border-box; }
-    
-    body { font-family: sans-serif; }
-    
-    .carousel {
-      background: #FAFAFA;
-    }
-    
-    .carousel-cell {
-      width: 66%;
-      height: 200px;
-      margin-right: 10px;
-      background: #8C8;
-      border-radius: 5px;
-      counter-increment: carousel-cell;
-    }
-    
-    /* cell number */
-    .carousel-cell:before {
-      display: block;
-      text-align: center;
-      content: counter(carousel-cell);
-      line-height: 200px;
-      font-size: 80px;
-      color: white;
-    }
-    </style>
-    <script>
-      window.console = window.console || function(t) {};
-    </script>
-    <script>
-      if (document.location.search.match(/type=embed/gi)) {
-        window.parent.postMessage("resize", "*");
-      }
-    </script>
-    <style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/dec76d00a4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Brian White's Portfolio (beta)</title>
+</head>
 
-
-<nav class="navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Icon here</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+<body>
+  <div class="wrapper">
+    <!--Navigation-->
+    <nav class="main-nav">
+      <ul>
         <li><a href="#">Resume</a></li>
-        <li><button class="btn btn-danger navbar-btn">Resume PDF</button></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Get in touch</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Get in Touch</a></li>
       </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="#">space for right</a></li>
-      </ul>
-    -->
+    </nav>
+
+    <!--Top Container-->
+  <section class="top-container">
+      <header class="showcase">
+        <h1>Brian White</h1>
+        <p>coder/journo/content producer</p>
+        <a href="#" class="btn">Check out my resume</a>  
+      </header>
+    </section>
+    <!--what i can help with-->
+    <h1>What I can help with:</h1>
+    <section class="boxes">
+      <div class="box">
+        <i class="fas fa-comments fa-4x"></i>
+        <h3>Communications</h3>
+        <p>As a trained journalist, I can craft credible messages frictionlessly.</p>
     </div>
-  </div>
-</nav>
-
-
-
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Brian White</h1>      
-    <p>digital/video producer</p>
-  </div>
-</div>
-
-<div class="panel panel-default">
-  <div class="panel-body"><h1>Let's Schedule an Interview</h1>
-    <p>I can help you with your communications needs. I've worked on websites and broadcasts in newsrooms coding scripts, pages and sound to deliver compelling narratives for nearly 10 years.</p> </div>
-</div>
-
-<div class="carousel" data-flickity>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-</div>  
-
-<footer class="footer container-fluid text-center">
-  <ul>
-    <li>github</li>
-    <li>linkedin</li>
-    <li>twitter</li>
-    <li>flickr</li>
-  </ul>
-</footer>
-
+    <div class="box">
+        <i class="fas fa-tv fa-4x"></i>
+        <h3>Content</h3>
+        <p>As a news producer, I leverage media of all types to tell the story.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-sitemap fa-4x"></i>
+      <h3>Coding Needs</h3>
+      <p>Solid foundation in HTML and CSS. Improving JavaScript skills. Comfortable with frameworks.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-hashtag fa-4x"></i>
+      <h3>Campaigns & Engagement</h3>
+      <p>Project management background equipped with skills in measuring clicks and conversions.</p>
+    </div>
+  </section>
   
-</div>
+  <!--Portfolio-->
+  <div class="box">
+    <h1>Works</h1>
+    <p>*carousel under construction*</p>
+  </div>
+    
+    <!--call to action-->
+  </section>
+    <div>
+      <h2>Let's Schedule an interview and chat about the potential!</h2>
+    <div class="btn">Get in Touch</div>
+  </div>
 
+<footer>  
+  <div class="btn">Printable Resume PDF</div>
+  <p>Brian White &copy; 2020</p>
+</footer>
+</body>
 </html>
