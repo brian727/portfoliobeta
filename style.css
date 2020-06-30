@@ -66,6 +66,7 @@ img {
 .top-container {
   display: grid;
   grid-gap: 20px;
+  width: 100%;
   
 }
 
@@ -98,11 +99,12 @@ img {
   
 }
 
-.about{
+.about {
   background-color: var(--shadow);
   box-shadow: var(--shadow);
-  justify-content: center;
   display: flex;
+ 
+  
 
 }
 
