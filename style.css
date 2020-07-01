@@ -41,7 +41,7 @@ img {
   grid-gap: 20px;
   padding: 0;
   list-style: none;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
 }
 
 .main-nav a {
@@ -126,7 +126,7 @@ img {
 .boxes {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
 }
 
 .box {
