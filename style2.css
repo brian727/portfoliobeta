@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 3rem;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "title title title"
+    "content content content"
+    "footer footer footer";
+    grid-gap: 1rem;
+   
+}
+
+.title {
+    grid-area: title;
+    background-color: salmon;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: seagreen;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "section section section" ;
+    background-color: slategrey;
+
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: tomato;
+}
+
+@media screen and (min-width: 736px)
+{
+   
+
