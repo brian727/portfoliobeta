@@ -34,6 +34,9 @@ h1, h2, h4, p {
     border: 0;
   }
 
+  .btn: hover {
+    color: rgba(71, 70, 70, 0.67)
+  }
 
 body {
     display: grid;
@@ -60,6 +63,12 @@ nav a {
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;  
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.5); 
+    transition: all .2s ease-in-out;
 }
 /* end navigation */
 
@@ -88,8 +97,9 @@ nav a {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-
 }
+
+
 
 .skill {
     margin: 1em;
@@ -99,10 +109,17 @@ nav a {
     
 }
 
+.skill:hover {
+    
+    background-color: rgba(71, 70, 70, 0.67);
+}
+
 #cta {
-    height: 25vh;
+    padding: 35px;
     text-align: center;
-    margin-top: 5em;
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
 }
 
 .footer {
@@ -122,11 +139,23 @@ nav a {
     padding: 1.5rem 2rem;
     background-color: rgba(119, 117, 117, 0.67);
    }
-
+   .slide:hover {
+    background-color: rgba(71, 70, 70, 0.67);
+   }
 div {
+    padding-top: 0;
     text-align: center;
 }
 
+@media only screen and (max-width: 400px) {
+    
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    
 
+} 
 
    
