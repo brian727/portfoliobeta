@@ -1,49 +1,132 @@
+/* CSS variables */
 * {
     margin: 0;
     padding: 0;
 }
-body {
-    padding: 3rem;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "title title title"
-    "content content content"
-    "footer footer footer";
-    grid-gap: 1rem;
-   
+h1, h2, h4, p { 
+    color: white;
 }
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+  }
+  
+  body {
+    background: #ccc;
+    margin: 2em; 
+    line-height: 1.4;
+    
+  }
+  
+  .btn {
+    background-color:  rgba(119, 117, 117, 0.67);
+    color: white;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+  }
+
+
+body {
+    display: grid;
+    grid-gap: 20px;
+    background-image: url(/img/saguaronight.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+/* Navigation */
+nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+}
+  
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;  
+}
+/* end navigation */
 
 .title {
-    grid-area: title;
-    background-color: salmon;
-
+    display: inline-block;
+    height: 50vh;
+    text-align: center;
+    padding-top: 2em;
+    color: white;    
+    font-size: 25px;
 }
 
-.header {
-    grid-area: header;
-    background-color: seagreen;
+
+
+#blurb {
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    padding: 5em;
+    
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "section section section" ;
-    background-color: slategrey;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 
 }
 
+.skill {
+    margin: 1em;
+    text-align: baseline;
+    background-color: rgba(119, 117, 117, 0.67);
+    padding: 1.5em 1em 0 1em;
+    
+}
+
+#cta {
+    height: 25vh;
+    text-align: center;
+    margin-top: 5em;
+}
 
 .footer {
-    grid-area: footer;
-    background-color: tomato;
+    color: white;
+    text-align: right;
 }
 
-@media screen and (min-width: 736px)
-{
-   
+#works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    padding: 3em;
+    margin: 0;   
+}
 
+.slide {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background-color: rgba(119, 117, 117, 0.67);
+   }
+
+div {
+    text-align: center;
+}
+
+
+
+   

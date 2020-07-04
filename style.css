@@ -112,11 +112,13 @@ img {
   padding: 1.5rem;
 }
 
-.fsd {
-  grid-template-columns: repeat(auto min-width(1fr));
-}
 
 /*Portfolio*/
+
+#caro {
+  justify-content: center;
+}
+
 /* Projects section */
 
 .projects-section {
