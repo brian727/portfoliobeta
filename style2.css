@@ -129,7 +129,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 1fr;
     margin: 0;
-    grid-row-gap: 5px;   
+    grid-gap: 20px;   
 }   
 
 .slide {
@@ -145,11 +145,22 @@ div {
     text-align: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 480px ) {
     
-   
+  
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+    .works{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    }
 
-    
+        
 
 } 
 
