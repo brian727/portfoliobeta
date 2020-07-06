@@ -1,7 +1,6 @@
 /* CSS variables */
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 h1, h2, h4, p { 
     color: white;
@@ -82,15 +81,21 @@ nav a:hover {
     border-style: solid;
     border-width: thin;
     color: white;
-    padding: 5em;
+    padding: 3em;
+    border-radius: 10px;
     
 }
 .content {
+    display: inline;
+    
+ 
+    /*  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
     justify-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 0;  
+    */
 }
 
 
@@ -99,26 +104,46 @@ nav a:hover {
     margin: 1em;
     text-align: baseline;
     background-color: rgba(119, 117, 117, 0.67);
-    padding: 1.5em 1em 0 1em;
+    padding: 1.5em;
+    border-radius: 10px;
   
     
 }
 
-.skill:hover {
-    
-    background-color: rgba(71, 70, 70, 0.67);
-}
+.skill:hover {background-color: rgba(71, 70, 70, 0.67);}
 
 .works {
-    display: inline;
+    display: block;
+    border-radius: 10px;
 }
 
+.card-img-top {
+    padding: 2em;
+}
+.card-body {
+    padding: auto;
+}
+.slide {
+    text-align: center;
+    background-color: rgba(119, 117, 117, 0.67);
+    border-radius: 25px;
+    margin: 2em;
+}
+.slide:hover {background-color: rgba(71, 70, 70, 0.67);}
+
+   /* centers "more works button */
+   div {
+    padding-top: 0;
+    text-align: center;
+}
 #cta {
+    display: inline;
     padding: 35px;
     text-align: center;
     border-color: white;
     border-width: thin;
     border-style: solid;
+    border-radius: 10px;
 }
 
 .footer p {
@@ -129,25 +154,8 @@ nav a:hover {
 
  
 
-.slide {
-    text-align: center;
-    
-    background-color: rgba(119, 117, 117, 0.67);
-   }
-   .slide:hover {
-    background-color: rgba(71, 70, 70, 0.67);
-   }
 
-   /* centers "more works button */
-   div {
-    padding-top: 0;
-    text-align: center;
-}
 
-@media only screen and (max-width: 480px ) {
-    
-   
 
-} 
 
    
