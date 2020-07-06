@@ -1,187 +1,152 @@
 /* CSS variables */
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h4, p { 
+    color: white;
+}
 :root {
-  --primary: #ddd;
-  --dark: #333;
-  --light: #fff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    
+  }
+  
+  .btn {
+    background-color:  rgba(119, 117, 117, 0.67);
+    color: white;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+  }
 
-html {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
-}
+.btn:hover {
+    color: rgba(71, 70, 70, 0.67)
+  }
 
 body {
-  background: #ccc;
-  margin: 30px 50px;
-  line-height: 1.4;
-}
-
-.btn {
-  background-color: var(--dark);
-  color: var(--light);
-  padding: 0.6rem 1.3rem;
-  text-decoration: none;
-  border: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
+    display: grid;
+    grid-gap: 20px;
+    background-image: url(/img/saguaronight.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 2em; 
+    line-height: 1.4;
+    
 }
 
 /* Navigation */
-.main-nav ul {
-  display: grid;
-  grid-gap: 20px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
 }
-
-.main-nav a {
-  background: var(--primary);
-  display: block;
-  text-decoration: none;
-  padding: 0.8rem;
-  text-align: center;
-  color: var(--dark);
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  box-shadow: var(--shadow);
-}
-
-.main-nav a:hover {
-  background: var(--dark);
-  color: var(--light);
-}
-
-/* Top Container */
-.top-container {
-  display: grid;
-  grid-gap: 20px;
-  width: 100%;
-  }
-
-/* Showcase */
-.showcase {
-  background: url(img/saguaronight.jpg);
-  background-size: cover;
-  background-position: bottom;
-  padding: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  box-shadow: var(--shadow);
   
+nav a {
+    color: gray;
+    display: block;
+    text-decoration: none;
+    
+    
 }
 
-.showcase h1 {
-  font-size: 4rem;
-  margin-bottom: 0;
-  color: var(--light);
-  
+nav a:hover {
+    color: white;
+   
 }
+/* end navigation */
 
-.showcase p {
-  font-size: 1.3rem;
-  margin-top: 0;
-  color: var(--light);
-  
-}
-
-.about {
-  background-color: var(--shadow);
-  box-shadow: var(--shadow);
-  display: flex;
-}
-
-/* Top Box */
-.top-box {
-  background: var(--primary);
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
+.title {
+    display: inline-block;
+    height: 50vh;
+    text-align: center;
+    padding-top: 2em;
+    color: white;    
+    font-size: 25px;
 }
 
 
-/*Portfolio*/
 
-#caro {
-  justify-content: center;
+#blurb {
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    padding: 5em;
+    
 }
-
-/* Projects section */
-
-.projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
-}
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 
-/* Boxes */
 
-.boxes {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+.skill {
+    margin: 1em;
+    text-align: baseline;
+    background-color: rgba(119, 117, 117, 0.67);
+    padding: 1.5em 1em 0 1em;
+    
 }
 
-.box {
-  background: var(--primary);
-  text-align: center;
-  padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
+.skill:hover {
+    
+    background-color: rgba(71, 70, 70, 0.67);
 }
 
-/* Info */
-.info {
-  background: var(--primary);
-  box-shadow: var(--shadow);
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 3rem;
+.works {
+    display: inline;
 }
 
-.portfolio {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat( minmax
-  (200px, 9fr));
+#cta {
+    padding: 35px;
+    text-align: center;
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
 }
 
-.portfolio img {
-  
-  width: 100%;
-  box-shadow: var(--shadow);
+.footer p {
+    color:white;
+    text-align: right;
+    opacity: 25%;    
 }
 
-.footer {
-  margin-top: 2rem;
-  background: var(--dark);
-  color: var(--light);
-  text-align: center;
-  padding: 1rem;
+ 
+
+.slide {
+    text-align: center;
+    
+    background-color: rgba(119, 117, 117, 0.67);
+   }
+   .slide:hover {
+    background-color: rgba(71, 70, 70, 0.67);
+   }
+
+   /* centers "more works button */
+   div {
+    padding-top: 0;
+    text-align: center;
 }
+
+@media only screen and (max-width: 480px ) {
+    
+   
+
+} 
+
+   
